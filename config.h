@@ -3,9 +3,9 @@ static const char *user  = "tmak";
 static const char *group = "tmak";
 
 static const char *colorname[NUMCOLS] = {
-	[INIT] =   "black",     /* after initialization */
-	[INPUT] =  "#005577",   /* during input */
-	[FAILED] = "#CC3333",   /* wrong password */
+	[INIT] =   "#505354",     /* after initialization */
+	[INPUT] =  "#505354",   /* during input */
+	[FAILED] = "#F92672",   /* wrong password */
 };
 
 /* treat a cleared input like a wrong password (color) */

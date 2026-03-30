@@ -175,6 +175,12 @@ readpw(Display *dpy, struct xrandr *rr, struct lock **locks, int nscreens,
 				explicit_bzero(&passwd, sizeof(passwd));
 				len = 0;
 				break;
+			case XK_u:
+				if (ev.xkey.state & ControlMask) {
+					explicit_bzero(&passwd, sizeof(passwd));
+					len = 0;
+				}
+				break;
 			case XK_BackSpace:
 				if (len)
 					passwd[--len] = '\0';
